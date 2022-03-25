@@ -1,6 +1,6 @@
 ## Docker Registry UI
 
-[![Go Report Card](https://goreportcard.com/badge/github.com/quiq/docker-registry-ui)](https://goreportcard.com/report/github.com/quiq/docker-registry-ui)
+[![Go Report Card](https://goreportcard.com/badge/github.com/buluma/docker-registry-ui-master)](https://goreportcard.com/report/github.com/buluma/docker-registry-ui-master)
 
 ### Overview
 
@@ -19,7 +19,7 @@
 No TLS or authentication implemented on the UI web server itself.
 Assuming you will proxy it behind nginx, oauth2_proxy or something.
 
-Docker images [quiq/docker-registry-ui](https://hub.docker.com/r/quiq/docker-registry-ui/tags/)
+Docker images [buluma/docker-registry-ui](https://hub.docker.com/r/buluma/docker-registry-ui/tags/)
 
 ### Configuration
 
@@ -28,7 +28,7 @@ The configuration is stored in `config.yml` and the options are self-descriptive
 ### Run UI
 
     docker run -d -p 8000:8000 -v /local/config.yml:/opt/config.yml:ro \
-        --name=registry-ui quiq/docker-registry-ui
+        --name=registry-ui buluma/docker-registry-ui
 
 To run with your own root CA certificate, add to the command:
 
@@ -121,6 +121,7 @@ Docker image formats and their confusing combinations as supported by this UI:
 * Manifest v2 schema 1 + Manifest List v2 schema 2: multi-arch image format containing digests of sub-images, the image history are coming from schema 1 (no idea from what sub-image it was picked up when created), should be referenced by repo:tag name.
 * Manifest v2 schema 2: current image format referenced by its digest sha256, no image history.
 * Manifest List v2 schema 2: multi-arch image referenced by its digest sha256 or cache image referenced by tag name, no image history.
+
 
 ### Screenshots
 
