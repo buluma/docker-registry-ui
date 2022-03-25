@@ -9,17 +9,17 @@ $ docker-compose up -d
 As an example, push the docker-registry-ui image to the local Docker Registry.
 
 ```bash
-$ docker tag quiq/docker-registry-ui localhost/quiq/docker-registry-ui
-$ docker push localhost/quiq/docker-registry-ui
-The push refers to repository [localhost:5000/quiq/docker-registry-ui]
-ab414a599bf8: Pushed
-a8da33adf86e: Pushed
-71a0e0a972a7: Pushed
-96dc74eb5456: Pushed
-ac362bf380d0: Pushed
-04a094fe844e: Pushed
-latest: digest: sha256:d88c1ca40986a358e59795992e87e364a0b3b97833aade5abcd79dda0a0477e8 size: 1571
+$ docker tag buluma/docker-registry-ui localhost/buluma/docker-registry-ui
+$ docker push localhost/buluma/docker-registry-ui
+The push refers to repository [localhost/buluma/docker-registry-ui]
+a504cc7fd96d: Pushed
+a28ff545522a: Pushed
+eaea6e1c6664: Pushed
+f356383db640: Pushed
+5f70bf18a086: Pushed
+b2d5eeeaba3a: Pushed
+latest: digest: sha256:fb91cb0c9f1d4fb874f1ffb854a212f3ae4578b4e64581b53651c50cdeb2496d size: 1573
 ```
 
-Then you will find the pushed repository 'quiq/docker-registry-ui' in the following URL.
-http://localhost/ui/quiq/docker-registry-ui
+Then you will find the pushed repository 'buluma/docker-registry-ui' in the following URL.
+http://localhost/ui/buluma/docker-registry-ui

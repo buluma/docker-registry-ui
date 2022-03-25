@@ -20,7 +20,7 @@ services:
       timeout: 10s
 
   registry-ui:
-    image: quiq/docker-registry-ui:latest
+    image: buluma/docker-registry-ui:latest
     ports:
       - "8000"
     volumes:

@@ -1,4 +1,4 @@
-IMAGE=quiq/docker-registry-ui
+IMAGE=buluma/docker-registry-ui
 VERSION=`sed -n '/version/ s/.* = //;s/"//g p' version.go`
 
 .DEFAULT: build

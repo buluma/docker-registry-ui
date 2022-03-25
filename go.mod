@@ -1,4 +1,4 @@
-module github.com/quiq/docker-registry-ui
+module github.com/buluma/docker-registry-ui
 
 require (
 	github.com/CloudyKit/fastprinter v0.0.0-20200109182630-33d98a066a53 // indirect

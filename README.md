@@ -140,3 +140,6 @@ Tag info page:
 Event log page:
 
 ![image](screenshots/4.png)
+
+### Credits
+Inspired by [Quiq](https://github.com/Quiq/docker-registry-ui)
