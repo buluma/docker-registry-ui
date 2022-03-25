@@ -29,7 +29,7 @@ event_database_location: data/registry_events.db
 
 # Cache refresh interval in minutes.
 # How long to cache repository list and tag counts.
-cache_refresh_interval: 10
+cache_refresh_interval: 2
 
 # If users can delete tags. If set to False, then only admins listed below.
 anyone_can_delete: false
